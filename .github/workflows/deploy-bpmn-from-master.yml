@@ -13,8 +13,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Deploy Updated Workflows
-        uses: jwulf/zeebe-action@master
+      - name: Zeebe Action
+        uses: jwulf/zeebe-action@0.7.1
         with:
           clientConfig: ${{ secrets.ZEEBE_CLIENT_CONFIG }}
           operation: deployWorkflow
