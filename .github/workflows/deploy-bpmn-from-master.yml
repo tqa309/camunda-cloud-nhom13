@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Zeebe Action
-        uses: jwulf/zeebe-action@0.7.1
+        uses: jwulf/zeebe-action@master
         with:
           clientConfig: ${{ secrets.ZEEBE_CLIENT_CONFIG }}
           operation: deployWorkflow
